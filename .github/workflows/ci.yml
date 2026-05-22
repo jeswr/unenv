@@ -17,7 +17,7 @@ jobs:
       - run: pnpm test:types
       - run: pnpm build
       - run: pnpm vitest --coverage
-      - uses: codecov/codecov-action@v5
+      - uses: codecov/codecov-action@e79a6962e0d4c0c17b229090214935d2e33f8354 # v6
         with: { token: "${{ secrets.CODECOV_TOKEN }}" }
   publish:
     runs-on: ubuntu-latest
